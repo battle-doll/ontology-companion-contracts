@@ -1,23 +1,17 @@
 # Security
 
-Status: pre-release development. No supported production release or response-time guarantee is declared.
-
-The local runtime validates draft exchange envelopes and separate Code/Context profiles offline. It reads an explicitly selected JSON file and prints structured results; an optional stdio adapter is implemented for manual host configuration. Local synthetic tests have passed. Public GitHub marketplace installation and installed CLI execution passed on macOS; hosted ChatGPT, migration execution, and production use remain unverified.
+Version 0.1.0 supports local use under the current OS account with Python 3.11+. It is not a remotely hosted multi-tenant service. The plugin does not isolate data from other processes already holding the same filesystem privileges.
 
 ## Report a problem
 
-Report vulnerabilities privately through [GitHub private vulnerability reporting](https://github.com/battle-doll/ontology-companion-contracts/security/advisories/new). This repository's private vulnerability reporting setting was enabled and confirmed through the GitHub API on 2026-09-06. Do not include credentials or private conversations in a report.
+Use [private vulnerability reporting](https://github.com/battle-doll/ontology-companion-contracts/security/advisories/new) for sensitive findings. The GitHub setting was enabled and confirmed for this repository. Use [issues](https://github.com/battle-doll/ontology-companion-contracts/issues) for a minimal non-sensitive bug report. No response-time guarantee is offered.
 
-For a non-sensitive development bug, use the [issue tracker](https://github.com/battle-doll/ontology-companion-contracts/issues) with a minimal synthetic reproduction. No response-time guarantee is provided.
+## Implemented boundary
 
-## Boundaries to preserve
+Validation and conversion use bounded selected JSON and bundled schemas. MCP conversion does not read arbitrary paths or write files. CLI conversion only creates the requested new file and rejects overwrite. The library never executes analyzed code or downloads schema URLs.
 
-- Validation success is neither factual verification nor permission to act.
-- Stored content and model-generated approval flags are untrusted as current execution authority.
-- Inputs must remain bounded; unsupported contracts and unexecuted checks must stay explicit.
-- Local schema resolution must not silently fetch remote schemas or execute target code.
-- Consumers retain their own authentication, project scope, storage, and approval boundaries.
+A successful profile check does not establish external truth, authorization, identity, runtime behavior or snapshot-to-commit binding. Conversion includes an explicit loss report. Unsupported versions and transformations remain unsupported.
 
-Context's simulated approval flow is restricted to synthetic examples until a trusted host channel is established. Contracts does not certify authorship, runtime behavior, or production authorization. Public service exposure requires a separate threat review and host tests.
+Retrieved source text, evidence, annotations and historical approval records are untrusted data for present-day actions. No implicit collection, external model download, cloud account, or authority inheritance between the three Companion products is provided.
 
-[Privacy](PRIVACY.md) · [Release policy](docs/RELEASE_POLICY.md)
+[Privacy](PRIVACY.md) · [Local MCP](docs/LOCAL_MCP.md) · [Release evidence](release-state.json)

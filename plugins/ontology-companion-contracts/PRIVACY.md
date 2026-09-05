@@ -1,19 +1,13 @@
 # Privacy
 
-Status: local-development policy draft. No production privacy service or published plugin is claimed.
+Version 0.1.0 is a local application workflow. The publisher operates no hosted data service for it. Normal commands and local MCP do not make direct network requests, require an API key, upload artifacts, or invoke an external model.
 
-The validator reads only the selected input for its current operation. Do not treat stdout capture by your terminal, editor, CI, or plugin host as private storage controlled by this validator. The preview does not provide a history archive or a remote upload service. A future remote adapter would require a separate consent and retention policy.
+Contracts reads the explicitly selected bounded JSON artifact or MCP argument and returns validation, compatibility, conversion or migration-plan results. It does not retain input artifacts in a registry or database. MCP conversion returns structured data; CLI conversion writes a new file only when an explicit output path is requested.
 
-## Data boundaries
+Source locators and supplied revisions remain data. The validator does not fetch referenced sources or verify external truth. Public examples and issue reports should use synthetic or non-sensitive data. Remove personal paths, credentials and private contents from diagnostics.
 
-Use synthetic fixtures during development. Do not include actual private conversations, credentials, health or payment records, government identifiers, or proprietary source in Git, tests, logs, screenshots, issue attachments, or public release materials.
+The user controls exported output files. Deleting an input or result does not remove copies from host transcripts, shell history, backups or independently shared artifacts.
 
-The intended core workflow is local and does not require telemetry, external LLM enrichment, account creation, or a remote database. Installing or running it through a third-party host does not change that host's own processing rules. Review the chosen host's rules before sharing any content there.
+Third-party hosts process prompts and tool results under their own terms. Installing this plugin does not change those host policies or give a cloud-only host access to the local computer.
 
-## Retention and deletion
-
-Temporary files, shell history, redirected output, exports, host transcripts, backups, and CI logs can have separate lifecycles. Removing a local database does not erase those copies. Secure erasure, encrypted storage, backup deletion, and host-history deletion are not certified features of this preview.
-
-No real-data migration or cloud deployment is part of the local preview. New persistence, upload, analytics, or enrichment behavior must update this document and undergo explicit review before release.
-
-[Security](SECURITY.md) · [Support](SUPPORT.md) · [Documentation](docs/README.md)
+[Security](SECURITY.md) · [Terms](TERMS.md) · [Support](SUPPORT.md)

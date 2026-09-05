@@ -37,7 +37,7 @@ EXCLUDED = {".git", ".agents", "plugins", "dist", "build", ".venv", "venv", "nod
 SUFFIXES = {".py", ".json", ".md", ".txt", ".yaml", ".yml"}
 ASSET_SUFFIXES = {".svg", ".png"}
 SPECIAL_FILES = {"vendor/CONTRACTS_LICENSE"}
-PRIVATE_NAMES = {"operator.json", "credentials.json", "auth.json", ".bootstrap-state.json"}
+PRIVATE_NAMES = {"operator.json", "local-cli.json", "credentials.json", "auth.json", ".bootstrap-state.json"}
 ZIP_DATE = (2026, 9, 5, 0, 0, 0)
 
 

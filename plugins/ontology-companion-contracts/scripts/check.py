@@ -24,7 +24,7 @@ manifest_path = ROOT / ".codex-plugin/plugin.json"
 if manifest_path.exists():
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     assert manifest["name"] == ROOT.name
-    assert manifest["version"] == "0.1.0-draft.1"
+    assert manifest["version"] == "0.1.0"
     assert (ROOT / "skills/validate-ontology-contract/SKILL.md").is_file()
     assert "mcpServers" not in manifest and "apps" not in manifest
 print("Contracts local checks passed. External host integration and public release remain separate gates.")

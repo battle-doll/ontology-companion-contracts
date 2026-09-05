@@ -4,7 +4,7 @@
   "app_info": {
     "display_name": "Ontology Companion Contracts",
     "subtitle": "Validate ontology artifacts",
-    "description": "Validate supported ontology artifact schemas and evidence metadata offline, compare exact draft version pairings, and report unsupported migrations without modifying inputs.",
+    "description": "Validate selected ontology artifact schemas and evidence metadata offline, convert selected Code Ontology snapshots with explicit mapping-loss and unverified-revision reports, compare exact draft version pairings, and plan supported identity migrations without modifying inputs.",
     "category": "DEVELOPER_TOOLS"
   },
   "tools": {
@@ -43,6 +43,18 @@
         "open_world_justification": "Operates locally within the private application and cannot publish content or modify third-party systems.",
         "destructive_justification": "Does not delete, overwrite, revoke, or perform irreversible actions."
       }
+    },
+    "convert_code_snapshot": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Computes a bounded selected artifact and mapping-loss report from supplied JSON without reading source files, retaining inputs, or changing state.",
+        "open_world_justification": "Does not contact remote services, follow evidence locators, or publish content to external systems.",
+        "destructive_justification": "The MCP operation has no file output, overwrite, deletion, revocation, or irreversible action."
+      }
     }
   },
   "test_cases": [
@@ -55,11 +67,11 @@
       "expected_output_url": null
     },
     {
-      "description": "Validate code profile",
-      "user_prompt": "Validate this synthetic Code reference export without running code.",
+      "description": "Convert a selected Code snapshot",
+      "user_prompt": "Convert this supplied Code Ontology 0.6.0 snapshot using my selected repository identity, revision annotation and exact symbol selection, and report omitted information.",
       "file_attachment_urls": null,
-      "tools_triggered": "validate_artifact",
-      "expected_output": "Checks preserved IDs, spans, references and static runtime_unknown evidence offline.",
+      "tools_triggered": "convert_code_snapshot",
+      "expected_output": "Returns a validated draft code-reference artifact preserving selected IDs and static evidence, explicit omission counts, and revision binding not_checked; no code executes or files change.",
       "expected_output_url": null
     },
     {

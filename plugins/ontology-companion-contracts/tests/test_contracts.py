@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from companion_contracts import (CONTRACT_VERSION, CO_NAMESPACE, MAX_BYTES,
     compatibility, migration_plan, read_artifact, validate_artifact, validate_bytes)
-from companion_contracts.transport import TOOLS, invoke
+from companion_contracts.transport import MAX_RPC_BYTES, TOOLS, invoke
 from companion_contracts.validator import InvalidInput, _schema
 
 
@@ -245,7 +245,8 @@ class ContractTests(unittest.TestCase):
     def test_actual_tool_outputs_conform_to_declared_schema(self):
         calls = {"validate_artifact": {"artifact_json": json.dumps(self.context)},
                  "compare_versions": {"producer_version": CONTRACT_VERSION, "consumer_version": CONTRACT_VERSION, "profile": "context-decision"},
-                 "plan_migration": {"artifact_json": json.dumps(self.context), "target_version": CONTRACT_VERSION}}
+                 "plan_migration": {"artifact_json": json.dumps(self.context), "target_version": CONTRACT_VERSION},
+                 "convert_code_snapshot": {"snapshot_json": "{}"}}
         for tool in TOOLS:
             result = invoke(tool["name"], calls[tool["name"]])
             check = {"errors": []}
@@ -314,11 +315,11 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(0, process.returncode, process.stderr)
         rows = [json.loads(line) for line in process.stdout.splitlines()]
         self.assertEqual(3, len(rows))
-        self.assertEqual(3, len(rows[1]["result"]["tools"]))
+        self.assertEqual(4, len(rows[1]["result"]["tools"]))
         self.assertEqual("valid", rows[2]["result"]["structuredContent"]["status"])
 
     def test_stdio_oversize_fail_closed(self):
-        process = subprocess.run([sys.executable, str(ROOT / "scripts/run.py"), "stdio"], input=b"x" * (MAX_BYTES + 1) + b'\n{"jsonrpc":"2.0","id":2,"method":"initialize"}\n', capture_output=True, timeout=10)
+        process = subprocess.run([sys.executable, str(ROOT / "scripts/run.py"), "stdio"], input=b"x" * (MAX_RPC_BYTES + 1) + b'\n{"jsonrpc":"2.0","id":2,"method":"initialize"}\n', capture_output=True, timeout=10)
         self.assertEqual(2, process.returncode)
         self.assertEqual(1, len(process.stdout.splitlines()))
 

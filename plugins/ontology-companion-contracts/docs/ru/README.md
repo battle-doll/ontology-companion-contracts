@@ -1,21 +1,11 @@
-# Ontology Companion Contracts — Документация
+# ontology-companion-contracts
 
-[English](../README.md) | [한국어](../ko/README.md) | [日本語](../ja/README.md) | [简体中文](../zh-CN/README.md) | [Русский](README.md)
+[사용 안내 / User guide](../../README.ru.md) · [English](../README.md)
 
-Начните с локальной версии и её ограничений. Нумерованные проектные документы Context описывают долгосрочный план и не расширяют текущие возможности программы.
-
-- [Запуск локальной версии](../../README.ru.md)
-- [Руководство для macOS / Windows / Linux](PLATFORMS.md)
-- [Архитектура и план](ARCHITECTURE_AND_ROADMAP.md)
-- [Политика версий](VERSION_POLICY.md)
-- [Выпуск и откат](RELEASE_POLICY.md)
-- [Безопасность](SECURITY.md)
-- [Конфиденциальность](PRIVACY.md)
-- [Поддержка](SUPPORT.md)
-- [Участие](CONTRIBUTING.md)
-- [История изменений](../../CHANGELOG.md)
-- [Apache-2.0](../../LICENSE)
-
-Локальная программа проверяет черновой конверт обмена и отдельные профили Code/Context без сети. Она читает явно выбранный JSON и выводит структурированный результат; также реализован дополнительный stdio-адаптер для ручной настройки хоста. Локальные синтетические тесты пройдены. Установка публичного плагина, выполнение миграций, реальные данные и фактическая интеграция с хостом пока не поддерживаются или ожидаются.
-
-Code, Context и Contracts — независимые продукты. Потребители могут закреплять или включать контрактные артефакты без установки плагина Contracts. Это не означает общую БД, наследование прав, автоматический вызов другого плагина или изменение существующего Code.
+- [Local MCP](../LOCAL_MCP.md)
+- [Usage](../LOCAL_USE.md)
+- [Windows](../WINDOWS_QUICKSTART.md)
+- [Architecture](ARCHITECTURE_AND_ROADMAP.md)
+- [Support](../../SUPPORT.md)
+- [Privacy](../../PRIVACY.md)
+- [Security](../../SECURITY.md)

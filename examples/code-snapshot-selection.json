@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "generator": {"name": "Code Ontology Companion", "version": "0.6.0"},
+  "repository": {"name": "synthetic-adapter-example", "path_policy": "repository-relative-only"},
+  "nodes": [
+    {"id": "python:function:example.worker.run", "type": "Function", "name": "run", "language": "Python", "qualified_name": "example.worker.run", "path": "example/worker.py", "metadata": {"line_start": 2, "line_end": 5, "is_async": false}},
+    {"id": "python:function:example.worker.helper", "type": "Function", "name": "helper", "language": "Python", "qualified_name": "example.worker.helper", "path": "example/worker.py", "metadata": {"line_start": 8, "line_end": 10}},
+    {"id": "python:externalfunction:print", "type": "ExternalFunction", "name": "print", "language": "Python"}
+  ],
+  "edges": [
+    {"source": "python:function:example.worker.run", "target": "python:function:example.worker.helper", "type": "CALLS", "evidence": [{"rule_id": "python.call.same_module", "basis": "resolved_static", "runtime_status": "not_applicable", "path": "example/worker.py", "line_start": 4, "line_end": 4}]},
+    {"source": "python:function:example.worker.run", "target": "python:externalfunction:print", "type": "CALLS", "evidence": [{"rule_id": "python.call.external_name", "basis": "name_heuristic", "runtime_status": "runtime_unknown", "limitations": ["runtime.activation_not_observed"]}]}
+  ]
+}

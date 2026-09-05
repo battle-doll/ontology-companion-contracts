@@ -15,7 +15,7 @@ def expected():
     paths += sorted((ROOT / "examples").glob("*.json"))
     return {"contract_version": "0.1.0-draft.1", "state": "local-draft",
             "profiles": ["context-decision", "code-reference"],
-            "license": "Apache-2.0 proposed locally; public release owner approval pending",
+            "license": "Apache-2.0",
             "assurance": "File digests identify this artifact only; no signature, truth, authorization, or consumer runtime proof.",
             "files": {path.relative_to(ROOT).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest() for path in paths}}
 
