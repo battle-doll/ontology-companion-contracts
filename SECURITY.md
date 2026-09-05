@@ -2,13 +2,13 @@
 
 Status: pre-release development. No supported production release or response-time guarantee is declared.
 
-The local runtime validates draft exchange envelopes and separate Code/Context profiles offline. It reads an explicitly selected JSON file and prints structured results; an optional stdio adapter is implemented for manual host configuration. Local synthetic tests have passed. Public plugin installation, migration execution, real-data use, and actual host integration remain unsupported or pending.
+The local runtime validates draft exchange envelopes and separate Code/Context profiles offline. It reads an explicitly selected JSON file and prints structured results; an optional stdio adapter is implemented for manual host configuration. Local synthetic tests have passed. Public GitHub marketplace installation and installed CLI execution passed on macOS; hosted ChatGPT, migration execution, and production use remain unverified.
 
 ## Report a problem
 
-Do not place exploit details, credentials, private conversations, or other sensitive payloads in a public issue. This local draft has no verified private reporting endpoint. Before public release, the owner must enable and test a private reporting route and replace this notice with the verified route. Do not assume a GitHub Security Advisory endpoint exists merely because the repository has security documentation.
+Report vulnerabilities privately through [GitHub private vulnerability reporting](https://github.com/battle-doll/ontology-companion-contracts/security/advisories/new). This repository's private vulnerability reporting setting was enabled and confirmed through the GitHub API on 2026-09-06. Do not include credentials or private conversations in a report.
 
-For a non-sensitive development bug, use the local issue template with a minimal synthetic reproduction. For a sensitive finding discovered during local development, retain the reproduction privately and contact the repository owner through an already established private channel.
+For a non-sensitive development bug, use the [issue tracker](https://github.com/battle-doll/ontology-companion-contracts/issues) with a minimal synthetic reproduction. No response-time guarantee is provided.
 
 ## Boundaries to preserve
 

@@ -38,8 +38,8 @@
       "sha256": "243af304e6c9ca17cc142407c83c966527f88c83434c1f2284e4ad69b654d4b6"
     },
     "CHANGELOG.md": {
-      "bytes": 1193,
-      "sha256": "7a81e03e2f36827e548c01146b42768d85f8e5899e60770835ac6fb36b124b2e"
+      "bytes": 1946,
+      "sha256": "a64c3945eba09619103be5b01fc9b8022e50cef8be1fb33418fea97e47204906"
     },
     "CONTRIBUTING.md": {
       "bytes": 1923,
@@ -70,32 +70,32 @@
       "sha256": "86b38ed1df323a01e4251866d0d6fac33f439ee388fb01145135489b1d473a2c"
     },
     "README.ja.md": {
-      "bytes": 5068,
-      "sha256": "47e9a03ee7f4c5b5d46e04764c0f6e05c4d5a4a37ad2e621ae1d558d5dc94bdd"
+      "bytes": 5620,
+      "sha256": "6a1341ef436c5e829b7d038581a2fc59aade13750bf25ca77214dae3d827cdaf"
     },
     "README.ko.md": {
-      "bytes": 4614,
-      "sha256": "e30e972294e4e334b40eb4e31b18e7a138ab8072509270226b1bbe988fed1b77"
+      "bytes": 5032,
+      "sha256": "86241d355aba23f499fe66bef61bb1ba0769dc359e9279fb2327b0d01eb3d7f7"
     },
     "README.md": {
-      "bytes": 4237,
-      "sha256": "4f2aeaae12899657aa2a2481a46460a8b248d7bf576249598d378cbc404d9b63"
+      "bytes": 4597,
+      "sha256": "ab54332a33ad6dac3da29c80b38aaee2eec5a992484b8778d917e7d803cb19e7"
     },
     "README.ru.md": {
-      "bytes": 7189,
-      "sha256": "25acbe650903eefefad1cf537ad606eead8865eb3b0d92f2cbe5a451358504c0"
+      "bytes": 7658,
+      "sha256": "8eb0b3fbd0ef103f3ec9076f4705cc9cbcdd8b6e3771205610d3943f858203ed"
     },
     "README.zh-CN.md": {
-      "bytes": 3879,
-      "sha256": "9bfb39efd1ee74d69cb26c71837120d017d1956eb2b3e93c6482b0960f16c3f3"
+      "bytes": 4322,
+      "sha256": "84c17ed9d5a509ccdc6645b80448f8df6c07ce996351a05db81602f12557d9ff"
     },
     "RISK_REGISTER.md": {
       "bytes": 1593,
       "sha256": "2f64a31edc5072a461baa4ec8a973f7c847cb11b4b37b8d5000323641c3bfefa"
     },
     "SECURITY.md": {
-      "bytes": 2062,
-      "sha256": "fd5bc4db3099fd4acde817052294486468f4d45f0990b9363db6bf552818edcb"
+      "bytes": 1962,
+      "sha256": "89197fe10e7f817264d8764df16fd6670c3adb3e9c1d623d6101743839f9d874"
     },
     "SUPPORT.md": {
       "bytes": 1303,
@@ -162,8 +162,8 @@
       "sha256": "0082ab204eb4a83c842c6dcd8639b0c2089df3c05277bc7b947e65022e1ab889"
     },
     "docs/RELEASE_POLICY.md": {
-      "bytes": 2889,
-      "sha256": "99fe723b5cee91a9c5406bc4a6ebb062012ed5a51e08a8735850382537df157f"
+      "bytes": 2935,
+      "sha256": "380138476695f9636f2fbae6f033a4411936ce2a90d79c23c9ca997be59640bb"
     },
     "docs/SOURCES.md": {
       "bytes": 2643,
@@ -342,8 +342,8 @@
       "sha256": "fa03529e870718e91f7d926f033d3dee975a81106ec30275dcd4c2893fb4388d"
     },
     "release-state.json": {
-      "bytes": 2406,
-      "sha256": "1a1cb6da4eece0707235ce446c02ed0b2861221f1a175c79fd33b2300b245d92"
+      "bytes": 3713,
+      "sha256": "070373bedcdca36f8dd111b896c1bd050a9dbd9dcc649eda4f27a1c7965bb77b"
     },
     "requirements-dev.txt": {
       "bytes": 229,
