@@ -1,0 +1,22 @@
+{
+  "source_repository": "https://github.com/battle-doll/code-ontology-companion",
+  "source_commit": "be1699f784e48433a692bbfaa1c6c1d6f2b489b0",
+  "reviewed_files": [
+    "skills/manage-code-ontology/references/schema.ttl",
+    "skills/manage-code-ontology/scripts/code_ontology_core.py",
+    "tests/test_relationship_evidence.py"
+  ],
+  "method": "read-only public source inspection; synthetic mapping fixture, no Code execution or modification",
+  "preserved": [
+    "co namespace exact URI",
+    "legacy language:kind:qualified_name ID shape and values",
+    "source/target/type edge triples",
+    "basis/rule_id/runtime_status/limitations in evidence.code"
+  ],
+  "limitations": [
+    "This is a selected reference subset, not an importer for full Code exports.",
+    "No Code producer integration, whole-graph round trip, or runtime compatibility is claimed.",
+    "Top-level symbol runtime_unknown is a limit on this reference claim; original edge runtime_status is separately preserved."
+  ],
+  "license": "Apache-2.0 proposed locally; independently authored synthetic fixture; no source bodies copied"
+}

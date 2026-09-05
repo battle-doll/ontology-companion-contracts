@@ -1,0 +1,34 @@
+{
+  "contract_version": "0.1.0-draft.1",
+  "profile": "context-decision",
+  "artifact_id": "artifact:demo-context",
+  "producer": {
+    "name": "synthetic-context-reader",
+    "version": "0.1.0"
+  },
+  "evidence": [
+    {
+      "id": "source:decision",
+      "origin": "user_asserted",
+      "scope": "project:demo",
+      "locator": "user-selected-demo-excerpt"
+    }
+  ],
+  "payload": {
+    "scope": "project:demo",
+    "decisions": [
+      {
+        "id": "decision:release",
+        "kind": "constraint",
+        "statement": "Run regression checks before publishing.",
+        "origin": "user_asserted",
+        "evidence_refs": [
+          "source:decision"
+        ],
+        "valid_from": "2026-09-05T00:00:00Z",
+        "valid_until": null,
+        "recorded_at": "2026-09-05T01:00:00Z"
+      }
+    ]
+  }
+}

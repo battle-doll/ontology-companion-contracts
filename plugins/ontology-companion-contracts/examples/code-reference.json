@@ -1,0 +1,65 @@
+{
+  "contract_version": "0.1.0-draft.1",
+  "profile": "code-reference",
+  "artifact_id": "artifact:demo-code",
+  "producer": {
+    "name": "synthetic-code-mapping",
+    "version": "0.1.0"
+  },
+  "evidence": [
+    {
+      "id": "evidence:call",
+      "origin": "source_observed",
+      "scope": "repository:demo",
+      "locator": "src/Worker.java:4",
+      "code": {
+        "basis": "direct_syntax",
+        "rule_id": "java.call.direct",
+        "runtime_status": "not_applicable",
+        "limitations": []
+      }
+    }
+  ],
+  "payload": {
+    "repository": "repository:demo",
+    "revision": "be1699f784e48433a692bbfaa1c6c1d6f2b489b0",
+    "snapshot_id": "snapshot:synthetic-demo",
+    "co_namespace": "https://battle-doll.github.io/code-ontology-explorer/schema#",
+    "symbols": [
+      {
+        "id": "java:method:demo.Worker.run",
+        "kind": "Method",
+        "qualified_name": "demo.Worker.run",
+        "source_path": "src/Worker.java",
+        "start_line": 4,
+        "end_line": 4,
+        "evidence_refs": [
+          "evidence:call"
+        ],
+        "runtime_status": "runtime_unknown"
+      },
+      {
+        "id": "java:method:demo.Worker.helper",
+        "kind": "Method",
+        "qualified_name": "demo.Worker.helper",
+        "source_path": "src/Worker.java",
+        "start_line": 5,
+        "end_line": 5,
+        "evidence_refs": [
+          "evidence:call"
+        ],
+        "runtime_status": "runtime_unknown"
+      }
+    ],
+    "relations": [
+      {
+        "source": "java:method:demo.Worker.run",
+        "target": "java:method:demo.Worker.helper",
+        "type": "CALLS",
+        "evidence_refs": [
+          "evidence:call"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+test_actual_tool_outputs_conform_to_declared_schema (test_contracts.ContractTests.test_actual_tool_outputs_conform_to_declared_schema) ... ok
+test_both_profiles_valid_with_unchecked_external_facts (test_contracts.ContractTests.test_both_profiles_valid_with_unchecked_external_facts) ... ok
+test_byte_limit (test_contracts.ContractTests.test_byte_limit) ... ok
+test_cli_independent_arbitrary_working_directory (test_contracts.ContractTests.test_cli_independent_arbitrary_working_directory) ... ok
+test_code_dangling_endpoint (test_contracts.ContractTests.test_code_dangling_endpoint) ... ok
+test_code_namespace_is_exact_legacy_identity (test_contracts.ContractTests.test_code_namespace_is_exact_legacy_identity) ... ok
+test_code_portable_paths (test_contracts.ContractTests.test_code_portable_paths) ... ok
+test_code_runtime_claim_rejected (test_contracts.ContractTests.test_code_runtime_claim_rejected) ... ok
+test_code_spans_and_booleans (test_contracts.ContractTests.test_code_spans_and_booleans) ... ok
+test_collection_limit (test_contracts.ContractTests.test_collection_limit) ... ok
+test_compatibility_only_explicit_same_version (test_contracts.ContractTests.test_compatibility_only_explicit_same_version) ... ok
+test_cross_scope_rejected (test_contracts.ContractTests.test_cross_scope_rejected) ... ok
+test_dangling_evidence (test_contracts.ContractTests.test_dangling_evidence) ... ok
+test_depth_limit (test_contracts.ContractTests.test_depth_limit) ... ok
+test_directory_and_fifo_refused_without_blocking (test_contracts.ContractTests.test_directory_and_fifo_refused_without_blocking) ... ok
+test_duplicate_evidence_id (test_contracts.ContractTests.test_duplicate_evidence_id) ... ok
+test_duplicate_json_keys_rejected (test_contracts.ContractTests.test_duplicate_json_keys_rejected) ... ok
+test_duplicate_record_id (test_contracts.ContractTests.test_duplicate_record_id) ... ok
+test_duplicate_reference_rejected (test_contracts.ContractTests.test_duplicate_reference_rejected) ... ok
+test_errors_are_bounded_and_do_not_echo_payload (test_contracts.ContractTests.test_errors_are_bounded_and_do_not_echo_payload) ... ok
+test_file_read_does_not_mutate_source (test_contracts.ContractTests.test_file_read_does_not_mutate_source) ... ok
+test_identity_plan_and_unsupported_loss (test_contracts.ContractTests.test_identity_plan_and_unsupported_loss) ... ok
+test_inference_not_upgraded_by_reference (test_contracts.ContractTests.test_inference_not_upgraded_by_reference) ... ok
+test_intervals_empty_and_reversed (test_contracts.ContractTests.test_intervals_empty_and_reversed) ... ok
+test_invalid_migration_preserves_parse_failure (test_contracts.ContractTests.test_invalid_migration_preserves_parse_failure) ... ok
+test_legacy_synthetic_identity_and_triples_preserved (test_contracts.ContractTests.test_legacy_synthetic_identity_and_triples_preserved) ... ok
+test_missing_field_and_additional_fields (test_contracts.ContractTests.test_missing_field_and_additional_fields) ... ok
+test_non_finite_numbers_rejected (test_contracts.ContractTests.test_non_finite_numbers_rejected) ... ok
+test_past_effective_time_is_valid (test_contracts.ContractTests.test_past_effective_time_is_valid) ... ok
+test_schema_parity_with_independent_jsonschema (test_contracts.ContractTests.test_schema_parity_with_independent_jsonschema) ... ok
+test_stdio_initialize_tools_and_call (test_contracts.ContractTests.test_stdio_initialize_tools_and_call) ... ok
+test_stdio_oversize_fail_closed (test_contracts.ContractTests.test_stdio_oversize_fail_closed) ... ok
+test_string_limit (test_contracts.ContractTests.test_string_limit) ... ok
+test_symlink_file_refused_when_supported (test_contracts.ContractTests.test_symlink_file_refused_when_supported) ... ok
+test_timestamp_utc_calendar_and_missing_timezone (test_contracts.ContractTests.test_timestamp_utc_calendar_and_missing_timezone) ... ok
+test_tool_descriptors_and_actual_calls (test_contracts.ContractTests.test_tool_descriptors_and_actual_calls) ... ok
+test_unicode_context_roundtrip (test_contracts.ContractTests.test_unicode_context_roundtrip) ... ok
+test_unknown_versions_and_profiles_fail_unsupported (test_contracts.ContractTests.test_unknown_versions_and_profiles_fail_unsupported) ... ok
+test_utf8_and_surrogates (test_contracts.ContractTests.test_utf8_and_surrogates) ... ok
+test_validation_deterministic_and_input_unchanged (test_contracts.ContractTests.test_validation_deterministic_and_input_unchanged) ... ok
+test_wrong_profile_payload (test_contracts.ContractTests.test_wrong_profile_payload) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.174s
+
+OK
+usage: run.py [-h] [--version]
+              {validate,compatibility,migration-plan,tools,stdio} ...
+
+Offline bounded ontology contract validator (draft; no authorization checks).
+
+positional arguments:
+  {validate,compatibility,migration-plan,tools,stdio}
+    validate            Validate one explicitly selected regular JSON file;
+                        never modifies it.
+    compatibility       Check a bundled producer-to-reader fixture pairing.
+    migration-plan      Produce an identity plan or explicit unsupported
+                        result; writes nothing.
+    tools               Print implemented local tool descriptors.
+    stdio               Run optional local stdio JSON-RPC tools; no
+                        registration performed.
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+{
+  "contract_version": "0.1.0-draft.1",
+  "errors": [],
+  "layers": {
+    "L0_parse": "valid",
+    "L1_schema": "valid",
+    "L2_profile": "valid",
+    "L3_compatibility": "not_checked",
+    "external_verification": "not_checked"
+  },
+  "not_checked": [
+    "content_truth",
+    "source_access",
+    "current_authorization",
+    "runtime_behavior",
+    "producer_identity",
+    "consumer_runtime",
+    "archive_completeness"
+  ],
+  "profile": "context-decision",
+  "status": "valid"
+}
+{
+  "contract_version": "0.1.0-draft.1",
+  "errors": [],
+  "layers": {
+    "L0_parse": "valid",
+    "L1_schema": "valid",
+    "L2_profile": "valid",
+    "L3_compatibility": "not_checked",
+    "external_verification": "not_checked"
+  },
+  "not_checked": [
+    "content_truth",
+    "source_access",
+    "current_authorization",
+    "runtime_behavior",
+    "producer_identity",
+    "consumer_runtime",
+    "archive_completeness"
+  ],
+  "profile": "code-reference",
+  "status": "valid"
+}
+Artifact digest manifest verified.
+Contracts local checks passed. External host integration and public release remain separate gates.

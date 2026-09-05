@@ -1,0 +1,19 @@
+{
+  "kind": "design_intent_not_platform_manifest",
+  "design_version": "0.2.0-draft.1",
+  "plugin_id": "ontology-companion-contracts",
+  "public_plugin_goal": true,
+  "state": "design_only",
+  "runtime_dependency_required_by_consumers": false,
+  "consumers": [
+    "code-ontology-companion",
+    "context-ontology-companion"
+  ],
+  "contract_artifacts_status": "draft_not_released",
+  "plugin_published": false,
+  "authority_inheritance": false,
+  "shared_user_data": false,
+  "proposed_first_packaging": "skills_with_verified_executor",
+  "remote_mcp": "optional_separate_decision",
+  "core_extraction": "only_after_two_real_consumers"
+}

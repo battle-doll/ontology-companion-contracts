@@ -1,0 +1,20 @@
+{
+  "name": "ontology-contracts-preview",
+  "interface": {
+    "displayName": "Ontology Contracts Preview"
+  },
+  "plugins": [
+    {
+      "name": "ontology-companion-contracts",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ontology-companion-contracts"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

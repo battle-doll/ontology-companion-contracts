@@ -1,0 +1,40 @@
+{
+  "name": "ontology-companion-contracts",
+  "version": "0.1.0-draft.1",
+  "description": "Validate bounded ontology interchange artifacts offline and inspect explicit draft version pairings.",
+  "author": {
+    "name": "battle-doll",
+    "url": "https://github.com/battle-doll"
+  },
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Ontology Companion Contracts",
+    "shortDescription": "Validate ontology artifacts offline.",
+    "longDescription": "A local draft validator for context-decision and code-reference profiles. Reports format and semantic limits without treating artifacts as truth or authorization. Python 3.11 or newer is required.",
+    "developerName": "battle-doll",
+    "category": "Productivity",
+    "capabilities": [
+      "Local Python 3.11+ workflow",
+      "Offline contract validation"
+    ],
+    "defaultPrompt": [
+      "Validate this ontology interchange artifact against its supported draft profile."
+    ],
+    "websiteURL": "https://github.com/battle-doll/ontology-companion-contracts",
+    "privacyPolicyURL": "https://github.com/battle-doll/ontology-companion-contracts/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/battle-doll/ontology-companion-contracts/blob/main/TERMS.md",
+    "brandColor": "#5B21B6",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
+  },
+  "homepage": "https://github.com/battle-doll/ontology-companion-contracts#readme",
+  "repository": "https://github.com/battle-doll/ontology-companion-contracts",
+  "keywords": [
+    "codex-plugin",
+    "ontology",
+    "offline",
+    "provenance",
+    "preview"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developers.openai.com/apps-sdk/schemas/chatgpt-app-submission.v1.json",
+  "schema_version": 1,
+  "app_info": {
+    "display_name": "Ontology Companion Contracts",
+    "subtitle": "Validate ontology artifacts",
+    "description": "Validate supported ontology artifact schemas and evidence metadata offline, compare exact draft version pairings, and report unsupported migrations without modifying inputs.",
+    "category": "DEVELOPER_TOOLS"
+  },
+  "tools": {
+    "validate_artifact": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Computes bounded validation or compatibility results without retaining inputs or changing files.",
+        "open_world_justification": "Operates locally within the private application and cannot publish content or modify third-party systems.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or perform irreversible actions."
+      }
+    },
+    "compare_versions": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Computes bounded validation or compatibility results without retaining inputs or changing files.",
+        "open_world_justification": "Operates locally within the private application and cannot publish content or modify third-party systems.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or perform irreversible actions."
+      }
+    },
+    "plan_migration": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Computes bounded validation or compatibility results without retaining inputs or changing files.",
+        "open_world_justification": "Operates locally within the private application and cannot publish content or modify third-party systems.",
+        "destructive_justification": "Does not delete, overwrite, revoke, or perform irreversible actions."
+      }
+    }
+  },
+  "test_cases": [
+    {
+      "description": "Validate context profile",
+      "user_prompt": "Validate this attached synthetic context-decision artifact.",
+      "file_attachment_urls": null,
+      "tools_triggered": "validate_artifact",
+      "expected_output": "Returns supported draft conformance layers; truth and authority remain not_checked.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Validate code profile",
+      "user_prompt": "Validate this synthetic Code reference export without running code.",
+      "file_attachment_urls": null,
+      "tools_triggered": "validate_artifact",
+      "expected_output": "Checks preserved IDs, spans, references and static runtime_unknown evidence offline.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Reject invalid evidence reference",
+      "user_prompt": "Explain validation errors in this synthetic artifact with a dangling reference.",
+      "file_attachment_urls": null,
+      "tools_triggered": "validate_artifact",
+      "expected_output": "Returns a bounded invalid result with pointer and rule, without echoing the input.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Compare supported versions",
+      "user_prompt": "Check whether the draft producer version matches this draft reader for context-decision.",
+      "file_attachment_urls": null,
+      "tools_triggered": "compare_versions",
+      "expected_output": "Returns only the explicit supported pairing; untested versions remain unsupported.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Assess migration loss",
+      "user_prompt": "Plan same-version preservation, then assess a migration to an unknown version.",
+      "file_attachment_urls": null,
+      "tools_triggered": "plan_migration",
+      "expected_output": "Returns an identity plan for supported input and explicit unsupported status for the unknown migration; changes no file.",
+      "expected_output_url": null
+    }
+  ],
+  "negative_test_cases": [
+    {
+      "description": "Unrelated task",
+      "user_prompt": "Schedule my calendar meeting.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "Do not invoke this plugin; calendar actions are outside its scope.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Sensitive data storage",
+      "user_prompt": "Store my password and payment card details.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "Do not invoke this plugin for collecting or storing secrets or sensitive payment information.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Implied permission or unrelated contract",
+      "user_prompt": "Review my employment contract and certify its legality.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "Do not invoke; this tool validates ontology artifacts, not legal contracts.",
+      "expected_output_url": null
+    }
+  ]
+}
