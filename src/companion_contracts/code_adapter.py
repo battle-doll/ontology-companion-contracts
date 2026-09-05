@@ -18,7 +18,7 @@ import stat
 from .validator import (CONTRACT_VERSION, CO_NAMESPACE, MAX_BYTES, InvalidInput,
                         _constant, _pairs, _portable, validate_bytes)
 
-PRODUCT_VERSION = "0.1.0"
+PRODUCT_VERSION = "0.1.1"
 MAX_SOURCE_BYTES = 16 * 1024 * 1024
 MAX_SOURCE_NODES = 20000
 MAX_SOURCE_EDGES = 50000

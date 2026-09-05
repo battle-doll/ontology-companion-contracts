@@ -13,11 +13,20 @@ codex plugin marketplace add battle-doll/ontology-companion-contracts
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-스킬, 서버, 스키마가 함께 제공되는 전체 플러그인을 설치하세요.
+스킬, 서버, 스키마가 함께 제공되는 전체 플러그인을 설치하세요. 설치 후 프로젝트에서 새 Codex 작업을 열면 설치된 스킬을 사용할 수 있습니다.
+
+## 현재 대화에 적용
+
+```text
+$apply-ontology-contracts
+Contracts 여기에 적용해줘. 선택한 context-export.json을 context-decision 프로필로 검증해줘.
+```
+
+적용 스킬은 현재 노출된 MCP 도구나 확인된 번들 CLI로 실제 파일과 내용 해시에 연결된 검증을 수행하고 현재 작업을 이어갑니다. 입력이 없으면 미완료로 남깁니다. 일반 온톨로지 설정 요청은 현재 실행 가능한 제품만 선택하며, 명시한 제품명이 우선합니다. 대화 안의 공유 기록으로 중복 적용을 피하고 프로젝트·전역 설정은 바꾸지 않습니다. 직접 검증과 변환에는 계속 `$validate-ontology-contract`를 사용합니다.
 
 ## 프로젝트 연결
 
-Codex에서 사용할 프로젝트를 열고 다음과 같이 요청하세요.
+프로젝트의 새 Codex 작업에서 다음과 같이 요청하세요.
 
 ```text
 $validate-ontology-contract
@@ -57,7 +66,7 @@ codex plugin marketplace upgrade ontology-contracts-preview
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-업데이트 후 위의 프로젝트 연결 요청을 다시 실행하고 새 작업을 열면 새로 설치된 버전을 사용합니다.
+업데이트 후 프로젝트에서 새 Codex 작업을 열어 갱신된 스킬을 불러오세요. 그 작업에서 위의 프로젝트 연결을 다시 요청한 뒤, 새 작업을 한 번 더 열면 갱신된 MCP 연결을 사용할 수 있습니다.
 
 ## 도움말
 

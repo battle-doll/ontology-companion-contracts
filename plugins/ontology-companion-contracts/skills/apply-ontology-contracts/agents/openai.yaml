@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apply Ontology Contracts"
+  short_description: "Apply contract checks to your task"
+  default_prompt: "Use $apply-ontology-contracts to apply Contracts to this conversation, validate the selected artifact with its actual profile, and continue the current task."

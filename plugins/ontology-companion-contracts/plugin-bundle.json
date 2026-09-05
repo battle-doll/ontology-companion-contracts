@@ -6,8 +6,8 @@
   ],
   "files": {
     ".codex-plugin/plugin.json": {
-      "bytes": 1776,
-      "sha256": "4b3988fff37ffccdd8afb5180d6abb671762bd2db932b8b477aa76686c54c54d"
+      "bytes": 1911,
+      "sha256": "bc3b313832d3781cd4d10da320bb3474b7f3b9fa13a57f50f35b05d7de2089ee"
     },
     ".gitattributes": {
       "bytes": 32,
@@ -30,24 +30,24 @@
       "sha256": "499619ce59112e7e46db21f58749ed19665b4feb59cb11ab0a8c9193b213a700"
     },
     "ACTIVE_PLAN.md": {
-      "bytes": 533,
-      "sha256": "f54d1bba9980465f3343f27373b881891a08569edcf12207e662afc10ce27266"
+      "bytes": 799,
+      "sha256": "0f60041d22933547b5e87c75cba74e5216e6cfd28e34b357abcf95459d0c7cd5"
     },
     "AGENTS.md": {
       "bytes": 1464,
       "sha256": "243af304e6c9ca17cc142407c83c966527f88c83434c1f2284e4ad69b654d4b6"
     },
     "CHANGELOG.md": {
-      "bytes": 3091,
-      "sha256": "4f3b6bb8c76668105e480b9618cee6b1991f1117b0e85d318be7aeb8941bff17"
+      "bytes": 4103,
+      "sha256": "55921650d08d61e40cb3b9c1605b4a952a283e4bda93ef6d6dfd3570ce7ae5d4"
     },
     "CONTRIBUTING.md": {
       "bytes": 1923,
       "sha256": "ec35f644326960c18ed6b32c6b1190b88a8de46abc90744ea8d9cffd215a382b"
     },
     "CURRENT_STATE.md": {
-      "bytes": 2320,
-      "sha256": "2e83db7364f167d2daae2fcf7bdb33f59b65a3999c11eefd04260b131666416f"
+      "bytes": 2117,
+      "sha256": "5f17ca8d4f76dcf358c2a0dde78d35bea297c19e8fb2f2644894c23b0caab138"
     },
     "DECISIONS.md": {
       "bytes": 563,
@@ -62,32 +62,32 @@
       "sha256": "9c03be8c98ba0ce627905e4b27f379c5900e7afd6b5609213b851523501b3f9d"
     },
     "NEXT_ACTIONS.md": {
-      "bytes": 1665,
-      "sha256": "6d0d7292521a04fea3b396f1926f984347d5e80105136db8ae3c8e4384be69cb"
+      "bytes": 1689,
+      "sha256": "808042bf465dc2c31926dd7fc9a7c0b02dcb9720e6dfb892329447b46be896fd"
     },
     "PRIVACY.md": {
       "bytes": 1299,
       "sha256": "d71e147b59594d32fc7c580726ccfbaff5932fa9af703b05033fd96bb9d39846"
     },
     "README.ja.md": {
-      "bytes": 3978,
-      "sha256": "773cfb1c2720f2a2d853298e53e9b7c96d520a6a0c4c9785398f03b740d4a8ee"
+      "bytes": 5050,
+      "sha256": "23c823f518ceb3b2c2eb4d77cce3af66499abfc50620af4d2bc7fd1cf317ecdd"
     },
     "README.ko.md": {
-      "bytes": 3472,
-      "sha256": "bd79fe30de706f95ccc23d11555c25bf10ae1fdacf5c7e96ba84fdca27291f6d"
+      "bytes": 4413,
+      "sha256": "d972f5e1cb2806ffa4f72374e7d6b677d380ae743318d98238e34efaadce7d57"
     },
     "README.md": {
-      "bytes": 3078,
-      "sha256": "cd932c75d46a4f68880e54f6762f4c75f98504f75eaee6af22ae9d4e1b0f813c"
+      "bytes": 3885,
+      "sha256": "f70427849717630784131d659fd64ca5925e0bdab8b3b78ceb00aae360fea492"
     },
     "README.ru.md": {
-      "bytes": 4951,
-      "sha256": "a4e8fe62b9917d88b594bc9516b28ad40688d1c58d553230c43ea1e1e2d4847d"
+      "bytes": 6541,
+      "sha256": "a357f1fbbfc212de0f17188857708d546642b9939d4e3f25b47e211928516df7"
     },
     "README.zh-CN.md": {
-      "bytes": 2924,
-      "sha256": "ed172eb8cec9fef6912113310477f90db570cec69f4d58cc2020c95954d7a1e6"
+      "bytes": 3703,
+      "sha256": "250b1100b20818be4e3fbc9b5d501cf98d42401a773670b719ab153361b5b433"
     },
     "RISK_REGISTER.md": {
       "bytes": 1593,
@@ -111,7 +111,7 @@
     },
     "artifact-manifest.json": {
       "bytes": 1673,
-      "sha256": "97d81d984120c56a551ae3821c1df1a57e25e529a6b30e451dcf8274c0225544"
+      "sha256": "83ed6d31e447e4edcada7997a7c3dd5b5bded58e02b3e619ae3b5e11f25afad1"
     },
     "assets/logo.png": {
       "bytes": 20480,
@@ -358,8 +358,8 @@
       "sha256": "fa03529e870718e91f7d926f033d3dee975a81106ec30275dcd4c2893fb4388d"
     },
     "release-state.json": {
-      "bytes": 2706,
-      "sha256": "9fdf5b0332e2c095669925db185ea6c0d310ec161c763aa4bdec7c717a3f35d2"
+      "bytes": 3060,
+      "sha256": "47a376c8006ff4025d1f79080b0d9e0346df2ef220f47d2d0ff228b5f5fc4439"
     },
     "requirements-dev.txt": {
       "bytes": 229,
@@ -378,8 +378,8 @@
       "sha256": "ef08f9833b9627fa9e60d84688381f28751498c5dacd46409a3c8a104b053de8"
     },
     "scripts/check.py": {
-      "bytes": 1183,
-      "sha256": "06fdd5e3d1f8fbe70986822bd72a7a5a5b3ab87811832015b35e5ba90e1b9bee"
+      "bytes": 1414,
+      "sha256": "dcb12117054cf8e2397cb0c166ccb0f81e60fd602cd92aca4afa5bfaeb435776"
     },
     "scripts/public_gate.py": {
       "bytes": 3303,
@@ -393,9 +393,21 @@
       "bytes": 9377,
       "sha256": "f5177b8edbc88b8be458822c3a78dc5c9756865353195b6e758f8e997adaae55"
     },
+    "skills/apply-ontology-contracts/SKILL.md": {
+      "bytes": 6455,
+      "sha256": "3f63d04a7369e552fad3a2636d5e32be0dee9e14db9a3e96665c78230a51812f"
+    },
+    "skills/apply-ontology-contracts/agents/openai.yaml": {
+      "bytes": 290,
+      "sha256": "ab538afe818f84c41719ebb1261186b947743430a6366eb9db1fc8aa908d2d16"
+    },
+    "skills/apply-ontology-contracts/scripts/apply_workflow.py": {
+      "bytes": 15044,
+      "sha256": "c5c9eae21b76852e23d93add3abf1dd77af99c6051a12252bcce2caed3495a41"
+    },
     "skills/validate-ontology-contract/SKILL.md": {
-      "bytes": 4123,
-      "sha256": "de18c674beeb2dfea78311fcb549538bc923aecc8033d10928c84317be9e68b7"
+      "bytes": 4263,
+      "sha256": "c751cedace5cbb75ecbc3680b6ce5fbc1f80b778591ecfe1d8ebf8203f66d201"
     },
     "src/companion_contracts/__init__.py": {
       "bytes": 529,
@@ -415,7 +427,7 @@
     },
     "src/companion_contracts/code_adapter.py": {
       "bytes": 22620,
-      "sha256": "b6ca5d1a10290842cf5bd4e2dd5efbdc5492be864aef15eb4ed285962d84ab15"
+      "sha256": "2ed475bfb282b58db63cde0f6bd98841760c93ebdf61ef6b86f2ee25d06d7488"
     },
     "src/companion_contracts/transport.py": {
       "bytes": 17117,
@@ -437,6 +449,10 @@
       "bytes": 6629,
       "sha256": "b6ba881e8fc43b7702fa75113828ee1e7b16b373625e85761754f2aa10fc1796"
     },
+    "tests/test_apply_workflow.py": {
+      "bytes": 14914,
+      "sha256": "12153cb301dd0eafc9e3012ee014e8c21fdb9a99d4b68c7cf036e9c6f72138a9"
+    },
     "tests/test_code_adapter.py": {
       "bytes": 18503,
       "sha256": "a15e831b619c52df1123f9f7953f46b44a1ba13afbd8e89c3c6d465ef4602fb9"
@@ -452,7 +468,7 @@
   },
   "layout": "self_contained_plugin",
   "manifest_version": 1,
-  "plugin_version": "0.1.0",
+  "plugin_version": "0.1.1",
   "product": "ontology-companion-contracts",
   "runtime": "Python >=3.11"
 }

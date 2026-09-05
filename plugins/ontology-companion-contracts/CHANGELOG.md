@@ -1,5 +1,13 @@
 # Changelog
 
+## Plugin 0.1.1 — conversation application candidate
+
+- Add the independently discoverable `apply-ontology-contracts` skill and same-bundle helper for applying actual artifact validation to the current conversation.
+- Route explicit product selections before generic availability. Keep installation, exposed skill, exposed MCP and verified CLI observations separate; a plan or MCP handoff remains unexecuted.
+- Bind validation to the selected file path, content SHA-256 and expected profile. Missing targets, unsupported inputs and profile mismatches remain incomplete instead of falling back to a demonstration.
+- Reuse a current-conversation receipt only after a fresh file/digest/profile check and host evidence comparison. The ledger is not persisted and does not authorize or prove an operation by itself.
+- Keep Code and Context optional, preserve mapping-loss and unchecked claims, and retain contract version `0.1.0-draft.1`. Conversation application makes no project or global configuration changes.
+
 ## Plugin 0.1.0 — local use and Code conversion
 
 - Accept real selected local artifacts while keeping the interchange contract at `0.1.0-draft.1`.

@@ -11,7 +11,7 @@
     "src/companion_contracts/_schemas/code-reference.schema.json": "965ee8fbdf9a0f4a6e0ea769a78850810c08acf1a016638f246ebfea051c6900",
     "src/companion_contracts/_schemas/context-decision.schema.json": "eefb43dda5619afbd89fc2c46536273350b7aa9d6963df04e381faf783161c74",
     "src/companion_contracts/_schemas/envelope.schema.json": "48ed69465199b76c118d3f79ae4b9611d0f2a82588ecba706ff961cd874069f6",
-    "src/companion_contracts/code_adapter.py": "b6ca5d1a10290842cf5bd4e2dd5efbdc5492be864aef15eb4ed285962d84ab15",
+    "src/companion_contracts/code_adapter.py": "2ed475bfb282b58db63cde0f6bd98841760c93ebdf61ef6b86f2ee25d06d7488",
     "src/companion_contracts/transport.py": "7f903492ae2b9a52818184d1fc64c6e5dafc9aa9c639ec7fe99b94c9d0757136",
     "src/companion_contracts/validator.py": "f25ee2e9e4527210a07f931adde2cca04e1f23de8be17437565d41f93c9d2023"
   },

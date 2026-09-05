@@ -17,6 +17,7 @@ def run(*args):
 
 run("-m", "unittest", "discover", "-s", "tests", "-v")
 run("scripts/run.py", "--help")
+run("skills/apply-ontology-contracts/scripts/apply_workflow.py", "--help")
 run("scripts/run.py", "validate", "examples/context-decision.json")
 run("scripts/run.py", "validate", "examples/code-reference.json")
 run("scripts/artifact_manifest.py")
@@ -24,7 +25,9 @@ manifest_path = ROOT / ".codex-plugin/plugin.json"
 if manifest_path.exists():
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     assert manifest["name"] == ROOT.name
-    assert manifest["version"] == "0.1.0"
+    assert manifest["version"] == "0.1.1"
     assert (ROOT / "skills/validate-ontology-contract/SKILL.md").is_file()
+    assert (ROOT / "skills/apply-ontology-contracts/SKILL.md").is_file()
+    assert (ROOT / "skills/apply-ontology-contracts/agents/openai.yaml").is_file()
     assert "mcpServers" not in manifest and "apps" not in manifest
 print("Contracts local checks passed. External host integration and public release remain separate gates.")

@@ -1,7 +1,7 @@
 # 다음 작업
 
-1. Plugin 0.1.0의 4개 MCP 도구, 실제 로컬 자료 지원, contract `0.1.0-draft.1` 구분을 유지한다. 선택한 Code 스냅샷 변환과 Context 내보내기 검증은 현재 지원되는 로컬 사용이다.
-2. 현재 소스·artifact digest·플러그인 묶음·ZIP을 대조하고 로컬 71개 시험, 공개 구조 검사, 스킬·manifest 검사, 두 번 빌드의 동일 해시를 확인한다. 공급한 revision과 스냅샷의 일치 여부는 계속 `not_checked`로 보고한다.
+1. Plugin 0.1.1의 독립 적용 스킬과 4개 MCP 도구, 실제 로컬 자료 지원, contract `0.1.0-draft.1` 구분을 유지한다. 선택한 Code 스냅샷 변환과 Context 내보내기 검증은 현재 지원되는 로컬 사용이다.
+2. 현재 소스·artifact digest·플러그인 묶음·ZIP을 대조하고 로컬 88개 시험, 공개 구조 검사, 스킬·manifest 검사, 두 번 빌드의 동일 해시를 확인한다. 공급한 revision과 스냅샷의 일치 여부는 계속 `not_checked`로 보고한다.
 3. 사용자 요청에 따라 GitHub 새 버전을 배포하고 macOS·Windows·Linux의 Python 3.11~3.13 CI 결과를 실제 실행에서 확인한다. macOS 로컬 통과와 다른 OS 또는 새 버전 CI 통과를 구분한다.
 4. 포털에 새 버전 초안을 준비한다. 실제 도구 descriptor와 제출 정보의 4개 도구, 긍정 5개·부정 3개 사례를 대조한다. 최종 승인과 Publish는 소유자가 수행하며, 제출·승인·게시 상태는 실제 결과로 구분한다.
 5. `release-state.json`은 패키징 시점의 정적 상태다. 이후 CI·GitHub·포털 결과는 별도 출시 보고서에 기록하고, 이미 검증한 산출물의 해시와 연결한다.

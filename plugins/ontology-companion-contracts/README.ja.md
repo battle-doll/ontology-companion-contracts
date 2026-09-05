@@ -13,11 +13,20 @@ codex plugin marketplace add battle-doll/ontology-companion-contracts
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-スキル、サーバー、スキーマを含むプラグイン全体をインストールしてください。
+スキル、サーバー、スキーマを含むプラグイン全体をインストールしてください。インストール後、プロジェクトで新しい Codex タスクを開くと、インストールしたスキルを利用できます。
+
+## 現在の会話に適用
+
+```text
+$apply-ontology-contracts
+Contracts をこの会話に適用し、選択した context-export.json を context-decision として検証してください。
+```
+
+適用スキルは現在呼び出せる MCP ツールまたは確認済みの同梱 CLI を使い、実際のファイルと内容のハッシュに結び付けて検証し、現在の作業を続けます。入力がなければ未完了のままです。一般的なオントロジー設定では現在実行可能な製品だけを選択し、明示された製品名を優先します。会話内の共有記録で重複適用を避け、プロジェクトやグローバル設定は変更しません。直接の検証・変換には引き続き `$validate-ontology-contract` を使います。
 
 ## プロジェクトに接続
 
-Codex で対象のプロジェクトを開き、次のように依頼します。
+対象プロジェクトの新しい Codex タスクで、次のように依頼します。
 
 ```text
 $validate-ontology-contract
@@ -57,7 +66,7 @@ codex plugin marketplace upgrade ontology-contracts-preview
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-アップデート後は上記の接続設定を再度依頼し、新しいタスクを開いてインストール済みの新バージョンを利用してください。
+アップデート後、プロジェクトで新しい Codex タスクを開き、更新されたスキルを読み込んでください。そのタスクで上記の接続設定を再度依頼し、さらに新しいタスクを開くと、更新された MCP 接続を利用できます。
 
 ## ヘルプ
 

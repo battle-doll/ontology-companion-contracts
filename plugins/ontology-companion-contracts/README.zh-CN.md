@@ -13,11 +13,20 @@ codex plugin marketplace add battle-doll/ontology-companion-contracts
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-请安装完整插件，以便技能、服务器和模式文件保持配套。
+请安装完整插件，以便技能、服务器和模式文件保持配套。安装后，在项目中打开新的 Codex 任务，即可使用已安装的技能。
+
+## 应用于当前对话
+
+```text
+$apply-ontology-contracts
+请将 Contracts 应用于当前对话，并将选定的 context-export.json 按 context-decision 配置类型验证。
+```
+
+应用技能使用当前可调用的 MCP 工具或已确认的内置 CLI，将验证结果绑定到实际文件及其内容哈希，然后继续当前任务。缺少输入时保持未完成。通用本体设置只选择当前可运行的产品，明确指定的产品优先。对话中的共享记录避免重复应用，不修改项目或全局设置。直接验证和转换仍使用 `$validate-ontology-contract`。
 
 ## 连接项目
 
-在 Codex 中打开目标项目，然后发送：
+在目标项目的新 Codex 任务中发送：
 
 ```text
 $validate-ontology-contract
@@ -57,7 +66,7 @@ codex plugin marketplace upgrade ontology-contracts-preview
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-更新后，请再次发送上面的项目连接请求，然后打开新任务，使连接使用新安装的版本。
+更新后，请在项目中打开新的 Codex 任务以加载更新后的技能。在该任务中再次发送上面的项目连接请求，然后再打开一个新任务，即可使用更新后的 MCP 连接。
 
 ## 帮助
 

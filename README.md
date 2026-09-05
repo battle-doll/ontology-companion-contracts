@@ -13,11 +13,20 @@ codex plugin marketplace add battle-doll/ontology-companion-contracts
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-Install the complete plugin so its skill, server and schemas stay together.
+Install the complete plugin so its skill, server and schemas stay together. Then open a new Codex task in your project to use the installed skills.
+
+## Apply to this conversation
+
+```text
+$apply-ontology-contracts
+Apply Contracts here and validate the selected context-export.json as context-decision.
+```
+
+The application skill uses an exposed MCP tool or the verified bundled CLI, binds the result to the actual file and its content digest, and continues the current task. Missing input remains pending. Generic ontology setup selects only currently runnable companions; explicit product names take precedence. A shared conversation ledger prevents duplicate application and never changes project or global settings. Direct validation and conversion still use `$validate-ontology-contract`.
 
 ## Connect your project
 
-Open your project in Codex and send:
+In the new Codex task for your project, send:
 
 ```text
 $validate-ontology-contract
@@ -57,7 +66,7 @@ codex plugin marketplace upgrade ontology-contracts-preview
 codex plugin add ontology-companion-contracts@ontology-contracts-preview
 ```
 
-Repeat the project connection request above after updating, then open a new task so the connection uses the installed version.
+After updating, open a new Codex task in your project so it loads the updated skills. Repeat the project connection request above from that task, then open another new task to use the updated MCP connection.
 
 ## Help
 

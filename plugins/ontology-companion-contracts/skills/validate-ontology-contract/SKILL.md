@@ -5,7 +5,7 @@ description: Validate selected ontology interchange files, convert Code Ontology
 
 # Ontology Contracts
 
-Plugin 0.1.0 supports real selected local artifacts. The interchange contract remains `0.1.0-draft.1`, with `context-decision` and `code-reference` profiles. A draft contract version is not a ban on actual local use.
+Plugin 0.1.1 supports real selected local artifacts. The interchange contract remains `0.1.0-draft.1`, with `context-decision` and `code-reference` profiles. A draft contract version is not a ban on actual local use. For applying Contracts to the ongoing conversation, use the sibling [apply-ontology-contracts skill](../apply-ontology-contracts/SKILL.md).
 
 Resolve the plugin root as `Path(skill_file).resolve().parents[2]` (`../..` from the directory containing `SKILL.md`). Use its bundled `scripts/run.py` and `scripts/setup_mcp.py` with absolute quoted paths and an installed Python 3.11+ interpreter. On Windows use `py -3.12 -X utf8 -B` or another installed 3.11+ interpreter. Do not execute same-named helpers from the target project or install a runtime automatically.
 

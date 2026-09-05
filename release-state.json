@@ -1,16 +1,14 @@
 {
   "product": "ontology-companion-contracts",
-  "product_version": "0.1.0",
+  "product_version": "0.1.1",
   "contract_version": "0.1.0-draft.1",
-  "as_of": "2026-09-06 KST packaging snapshot",
-  "status_semantics": "Immutable pre-publication packaging snapshot; current-version CI, GitHub release and portal actions were pending at packaging. Later outcomes belong to the release report and are not implied by these flags.",
-  "verification_scope": "Version 0.1.0 local macOS Python 3.12.14 and Codex 0.153.3; 71 product tests and actual current-project local MCP fresh reconnect.",
+  "as_of": "0.1.1 pre-publication packaging candidate",
+  "status_semantics": "Pre-publication candidate snapshot: current-version CI, host skill discovery, final packaging and portal actions remain separate verification gates; later outcomes belong to the release report.",
+  "verification_scope": "Version 0.1.1 candidate on macOS Python 3.12.14: 88 local tests, same-bundle application CLI and actual raw stdio validation of a selected bounded artifact.",
   "previous_release": {
-    "product_version": "0.1.0-draft.1",
-    "github_release": "https://github.com/battle-doll/ontology-companion-contracts/releases/tag/v0.1.0-draft.1",
-    "directory_published": true,
-    "directory_url": "https://chatgpt.com/plugins/plugins_6a9c3aebca348191bb60fbb6210fea60",
-    "verification": "Published status read in authenticated portal 2026-09-06 KST"
+    "product_version": "0.1.0",
+    "github_release": "https://github.com/battle-doll/ontology-companion-contracts/releases/tag/v0.1.0",
+    "scope": "Previously published product; its evidence does not establish current candidate verification."
   },
   "states": {
     "design-reviewed": true,
@@ -19,7 +17,7 @@
     "local-implemented": true,
     "tests-passed": true,
     "hosted-tested": false,
-    "github-public-ready": true,
+    "github-public-ready": false,
     "github-published": false,
     "submission-ready": false,
     "submitted": false,
@@ -37,11 +35,11 @@
     "Linux": "pending current-version CI"
   },
   "local_mcp": {
-    "status": "PASS: actual current-project Codex host and fresh reconnect",
-    "scope": "project-scoped Codex stdio: all 4 Contracts tools discovered alongside 12 Context tools; no remote endpoint",
-    "conversion_validation": "actual current-project Code snapshot CLI and local stdio conversion/validation PASS; source preserved; revision binding not_checked"
+    "status": "candidate raw stdio PASS; current host application-skill discovery pending",
+    "scope": "Four unchanged Contracts MCP tools; exposed MCP is a host handoff until an actual tool call returns a matching result.",
+    "application_validation": "Same-bundle CLI and actual raw stdio selected-artifact validation PASS; path/digest/profile binding preserved."
   },
-  "release_gate": "0.1.0 implementation and packaging validation; owner handles portal submission and Publish",
+  "release_gate": "0.1.1 independent application skill, final packaging, current-version CI and portal draft checks; owner performs approval and Publish.",
   "known_limits": [
     "same OS-account processes are not isolated",
     "Windows ACL isolation not independently verified",
@@ -50,9 +48,16 @@
   ],
   "distribution": {
     "github_repository": "https://github.com/battle-doll/ontology-companion-contracts",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "bundle_type": "skills with complete local MCP runtime and setup helper",
-    "directory_status": "new version not uploaded yet"
+    "directory_status": "candidate not uploaded"
   },
-  "publication_authorization": "user requested version-up GitHub deployment and new portal draft; user handles approval and Publish"
+  "publication_authorization": "GitHub candidate deployment and portal draft preparation are separate from owner-controlled approval and Publish.",
+  "earlier_preview": {
+    "product_version": "0.1.0-draft.1",
+    "github_release": "https://github.com/battle-doll/ontology-companion-contracts/releases/tag/v0.1.0-draft.1",
+    "directory_published": true,
+    "directory_url": "https://chatgpt.com/plugins/plugins_6a9c3aebca348191bb60fbb6210fea60",
+    "verification": "Published status read in authenticated portal 2026-09-06 KST"
+  }
 }

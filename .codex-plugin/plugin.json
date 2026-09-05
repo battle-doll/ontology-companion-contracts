@@ -1,7 +1,7 @@
 {
   "name": "ontology-companion-contracts",
-  "version": "0.1.0",
-  "description": "Validate selected ontology artifacts and convert Code Ontology snapshots offline.",
+  "version": "0.1.1",
+  "description": "Apply conversation-scoped contract checks, validate selected ontology artifacts and convert Code snapshots offline.",
   "author": {
     "name": "battle-doll",
     "url": "https://github.com/battle-doll"
@@ -19,6 +19,7 @@
       "Code snapshot conversion"
     ],
     "defaultPrompt": [
+      "Apply Ontology Companion Contracts to this conversation and validate the selected artifact.",
       "Validate this project’s selected ontology artifacts.",
       "Convert this selected Code Ontology snapshot and report any mapping loss."
     ],
